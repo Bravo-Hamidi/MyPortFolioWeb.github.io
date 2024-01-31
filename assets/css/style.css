@@ -1,0 +1,393 @@
+.text-center {
+    text-align: center;
+}
+
+#welcome {
+    color: white;
+    text-transform: capitalize;
+    font-size: 2rem;
+    padding-top: 30px;
+}
+
+#personal-photo {
+    width: 25%;
+    margin: 0 auto;
+}
+
+#personal-photo img {
+    width: 100%;
+}
+
+.collection-header {
+    color: white;
+    margin: 0.9rem 0;
+    font-size: 1.2rem;
+}
+
+.slideShow {
+    width: 40%;
+    height: 50vh;
+    margin: 3rem auto;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.slideShow__container {
+    width: 45%;
+    height: 100%;
+}
+
+.slideShow img {
+    width: 100%;
+    height: 100%;
+}
+
+.prev,
+.next {
+    color: white;
+    font-weight: bold;
+    font-size: 0.7rem;
+}
+
+.prev,
+.next {
+    display: inline-block;
+    cursor: pointer;
+}
+
+.chooseImg {
+    width: 40%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-column-gap: 0.5rem;
+}
+
+.column-img {
+    opacity: 0.4;
+    cursor: pointer;
+}
+
+.column-img img {
+    width: 100%;
+    height: 100%;
+}
+
+.active,
+.column-img:hover {
+    opacity: 1;
+}
+
+#chooseImg_nature,
+#chooseImg_people {
+    display: none;
+}
+
+#nature-slide,
+#people-slide {
+    display: none;
+}
+
+#album {
+    margin: 0 auto;
+    text-decoration: none;
+    text-align: center;
+    width: 70%;
+    color: white;
+    display: flex;
+}
+
+#album a {
+    display: inline-block;
+    padding: 0.5rem;
+    width: 100%;
+    cursor: pointer;
+    font-size: 0.8rem;
+}
+
+#album a:hover {
+    background-color: white;
+    color: black;
+}
+
+#main {
+    border: 5px solid rgba(116, 105, 105, 0.781);
+}
+
+#about {
+    margin: 0 auto;
+    width: 70%;
+}
+
+#about hr,
+#contact hr {
+    width: 10rem;
+}
+
+.about-name {
+    color: white;
+    font-family: "Itim", cursive;
+}
+
+.about-header {
+    font-size: 1.3rem;
+}
+
+.about-paragraph {
+    color: rgb(181, 190, 199);
+    font-weight: 800;
+    font-size: 0.8rem;
+}
+
+.skills-title {
+    font-size: 1.1rem;
+}
+
+.skill-text {
+    letter-spacing: 5px;
+}
+
+.skills-lists {
+    margin-top: 1.5rem;
+}
+
+.skills-lists i {
+    padding: 0.5rem;
+}
+
+.skills-list {
+    background-color: rgba(112, 128, 144, 0.301);
+    border-radius: 0.5rem;
+}
+
+.skills-list-percentage {
+    background-color: rgba(240, 255, 246, 0.794);
+    text-align: center;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+}
+
+.percentage-90 {
+    width: 90%;
+    background-color: rgb(13, 140, 13);
+}
+
+.percentage-94 {
+    width: 85%;
+    background-color: green;
+
+}
+
+.percentage-80 {
+    width: 80%;
+    background-color: rgb(32, 162, 32);
+
+
+}
+.percentage-70{
+    width: 70%;
+    background-color: rgb(75, 162, 75);
+
+}
+.percentage-85{
+    width: 85%;
+
+    background-color: rgb(20, 154, 20);
+
+
+}
+
+.skills-list-label {
+    color: whitesmoke;
+    font-size: 1rem;
+}
+
+.resumeBtn__container {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.resume-btn {
+    text-align: center;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+    padding: 1rem;
+    border: none;
+    outline: none;
+}
+
+.resume-btn:hover {
+    background-color: gray;
+    color: whitesmoke;
+}
+
+.download-btn{
+    margin-top: 20px;
+    padding: 10px;
+}
+
+#prouds {
+    margin: 3rem auto;
+    display: flex;
+    justify-content: space-between;
+    background-color: gainsboro;
+    height: 6rem;
+    border-radius: 0.5rem;
+}
+
+#prouds div {
+    padding: 0.5rem 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+}
+
+#partners-div {
+    border-radius: 0.5rem 0 0 0.5rem;
+}
+
+.gray-background {
+    background-color: grey;
+}
+
+#prices {
+    margin: 0 auto;
+    width: 70%;
+    text-align: center;
+}
+
+.price-table__container {
+    width: 70%;
+}
+
+.price-table {
+    background-color: darkgray;
+    margin: 0 auto;
+}
+
+.price-header {
+    color: white;
+    font-family: "Itim", cursive;
+}
+
+.price-per-month {
+    font-size: 1.3rem;
+    color: black;
+}
+
+#table-1:hover {
+    background-color: #d6d5d5;
+}
+
+#table-2:hover {
+    background-color: #d6d5d5;
+}
+
+table {
+    width: 65%;
+}
+
+table,
+td,
+th {
+    border: rgba(8, 5, 5, 0.835) solid 1px;
+    border-collapse: collapse;
+    text-align: center;
+    font-size: 1rem;
+}
+
+td {
+    padding: 0.7rem;
+}
+
+th {
+    padding: 1rem;
+    background-color: grey;
+    color: whitesmoke;
+}
+
+.signUp-btn {
+    border: none;
+    border-radius: 0.5rem;
+    outline: none;
+    width: 30%;
+    padding: 0.3rem 0.8rem;
+    font-size: 1rem;
+}
+
+.signUp-btn:hover {
+    background-color: black;
+    color: white;
+}
+
+#contact {
+    width: 70%;
+    margin: 0 auto;
+}
+
+.contact-header {
+    color: white;
+}
+
+.contact-label {
+    color: whitesmoke;
+    font-size: 1rem;
+}
+
+.contact-text {
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 800;
+}
+
+#form {
+    width: 70%;
+    margin: 0 auto;
+}
+
+.form-header {
+    color: rgba(255, 255, 255, 0.89);
+    font-size: 1.2rem;
+    font-weight: 800;
+}
+
+#form input {
+    border-radius: 0.5rem;
+    border: none;
+    padding: 0.3rem 0.7rem;
+}
+
+#message {
+    padding: 0.3rem 0.7rem;
+    border-radius: 1rem;
+    width: 100%;
+}
+
+#send-message {
+    border-radius: 0.5rem;
+    border: none;
+    font-size: 0.8rem;
+}
+
+#send-message:hover {
+    background-color: gray;
+    color: white;
+    outline: none;
+    border: none;
+}
+
+#prices {
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+input:focus,
+textarea:focus {
+    outline: none;
+}

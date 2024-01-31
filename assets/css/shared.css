@@ -1,0 +1,423 @@
+* {
+    font-family: "Itim", cursive;
+}
+
+body {
+    margin: 0px auto;
+    background-color: black;
+}
+
+a {
+    text-align: center;
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+p {
+    color: whitesmoke;
+    font-size: 0.6rem;
+    text-orientation: sideways;
+    text-transform: capitalize;
+}
+
+button {
+    cursor: pointer;
+}
+
+.width {
+    width: 70%;
+    margin: 0 auto;
+}
+
+.font-size {
+    font-size: 0;
+}
+
+.main-footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.social-media__container {
+    width: 100%;
+}
+
+.social-media__links {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+}
+
+.social-media__links li {
+    margin-right: 1rem;
+}
+
+.social-media__link {
+    color: grey;
+    font-size: 1.3rem;
+}
+
+.social-media__links i:hover {
+    font-weight: bolder;
+}
+
+#gotoTop {
+    position: fixed;
+    bottom: 10px;
+    right: 5px;
+    color: white;
+    font-size: 0.4rem;
+    margin-right: 10px;
+    background-color: black;
+    padding: 0.4rem;
+}
+
+#gotoEnd {
+    position: fixed;
+    top: 10px;
+    right: 5px;
+    color: white;
+    font-size: 0.4rem;
+    margin-right: 10px;
+    background-color: black;
+    padding: 10px;
+}
+
+#gotoEnd:hover {
+    background-color: white;
+    color: black;
+}
+
+#gotoTop:hover {
+    background-color: white;
+    color: black;
+}
+
+input[type=submit] {
+    cursor: pointer;
+}
+
+#menu {
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    width: 10%;
+    height: 100%;
+    background-color: rgba(128, 128, 128, 0.212);
+    text-align: center;
+    font-size: 0.7rem;
+}
+
+#menu img {
+    width: 100%;
+    opacity: 0.6;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu-label {
+    color: whitesmoke;
+    font-size: 1.2rem;
+}
+
+.menu-links {
+    width: 100%;
+    font-size: 1.2rem;
+}
+
+#menu ul li {
+    display: block;
+    margin-top: 0.5rem;
+    cursor: pointer;
+    width: 100%;
+}
+
+#menu li:hover,
+#menu2 li:hover {
+    background-color: gray;
+}
+
+#menu a,
+#menu2 a {
+    display: inline-block;
+    width: 100%;
+}
+
+#menu p,
+#menu2 p {
+    margin: 0px;
+}
+
+#menu2 {
+    width: 100%;
+    display: none;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: rgb(139, 139, 139);
+    color: black;
+}
+
+#menu2 img {
+    width: 50%;
+}
+
+#menu2 ul li a {
+    color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#menu2 p {
+    color: black;
+}
+
+.flex-menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* display: block; */
+}
+
+.navbar-icon,
+.close-menu,
+.navbarBtn-container {
+    color: white;
+    position: fixed;
+    top: 1%;
+    right: 3%;
+    font-size: 1.1rem;
+    display: none;
+    cursor: pointer;
+}
+
+.menu-link-li .menu-label,
+.close-menu {
+    color: black;
+}
+
+.navbarBtn-container {
+    display: inline-block;
+    cursor: pointer;
+}
+
+.bar1,
+.bar2,
+.bar3 {
+    width: 2rem;
+    height: 5px;
+    background-color: white;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+
+.change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+    transform: rotate(-45deg) translate(-9px, 6px);
+    background-color: black;
+}
+
+.change .bar2 {
+    opacity: 0;
+}
+
+.change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px);
+    transform: rotate(45deg) translate(-8px, -8px);
+    background-color: black
+}
+
+.change {
+    z-index: 2;
+}
+
+#down {
+    font-size: 1.8rem;
+}
+
+@media (max-width: 1200px) {
+    #prices {
+        width: 80%;
+    }
+    .resumeBtn__container {
+        justify-content: center;
+    }
+}
+
+@media(min-width:968px) {
+    #menu2,
+    .navbar-icon,
+    .close-menu,
+    .navbarBtn-container {
+        position: relative;
+        display: none;
+    }
+}
+
+@media (max-width: 967px) {
+    #menu,
+    #gotoTop,
+    #gotoEnd {
+        display: none;
+    }
+    #about,
+    #prices,
+    #contact,
+    #form {
+        width: 90%;
+    }
+    .photos__container,
+    .chooseImg {
+        width: 70%;
+    }
+    .slideShow {
+        width: 90%;
+    }
+    .navbar-icon {
+        display: block;
+    }
+    #personal-photo {
+        width: 50%;
+    }
+    #album a {
+        font-size: 1.8rem;
+    }
+    .collection-header {
+        font-size: 1.9rem;
+    }
+    #form input,
+    #form #message {
+        font-size: 1.4rem;
+    }
+    .contact-text {
+        font-size: 1.7rem;
+    }
+    .menu-link-li i,
+    .menu-link-li p {
+        font-size: 1.8rem;
+    }
+    .social-media__links i {
+        font-size: 2rem;
+    }
+    .about-paragraph {
+        font-size: 1.4rem;
+    }
+    .skills-list-label {
+        font-size: 1.5rem;
+    }
+    .skills-title {
+        font-size: 1.6rem;
+    }
+}
+
+@media (max-width: 768px) {
+    #personal-photo img {
+        width: 80%;
+    }
+    #contact,
+    #form,
+    .photos__container,
+    .slideShow {
+        width: 90%;
+    }
+    #form input {
+        width: 100%;
+    }
+    #prouds div {
+        font-size: 1.4rem;
+        padding: 0.5rem;
+    }
+    #table1,
+    #table2 {
+        width: 80%;
+        margin: 1rem auto;
+    }
+    #personal-photo {
+        width: 60%;
+    }
+    th,
+    td {
+        width: 80%;
+        font-size: 1.4rem;
+    }
+    .signUp-btn {
+        width: 45%;
+    }
+}
+
+@media (max-width: 557px) {
+    #prices,
+    .slideShow,
+    #album {
+        width: 100%;
+    }
+    .slideShow {
+        height: 40vh;
+    }
+    .next,
+    .prev {
+        font-size: 1.5rem;
+    }
+    #about,
+    .chooseImg {
+        width: 90%;
+    }
+    #prouds {
+        flex-direction: column;
+        height: auto;
+        border-radius: 0;
+    }
+    #prouds div {
+        border-radius: 0;
+    }
+    .photos__container {
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+    }
+    .photos__container img {
+        width: 100%;
+        border-radius: 1rem;
+        margin-top: 1rem;
+    }
+    .nature-photo,
+    #personal-photo img,
+    table {
+        width: 100%;
+    }
+    .row-nature,
+    #album {
+        flex-direction: column;
+    }
+    .resume-btn {
+        font-size: 1.2rem;
+    }
+    #personal-photo {
+        width: 80%;
+    }
+    #prices {
+        flex-direction: column;
+    }
+    .signUp-btn {
+        width: 33%;
+    }
+}
+
+#menu .press-closeMenuBtn {
+    display: block !important;
+    width: 100%;
+    height: 77%;
+    background-color: black;
+    position: absolute !important;
+    top: 0;
+    right: 0;
+}
